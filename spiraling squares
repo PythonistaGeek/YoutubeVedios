@@ -15,5 +15,5 @@ def randomColor():
 for i in range(5,400,5):
     randomColor()
     t.forward(i)
-    t.left(91)
+    t.left(90)
 wn.mainloop()
