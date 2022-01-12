@@ -1,0 +1,28 @@
+import turtle
+import random
+wn=turtle.Screen()
+t=turtle.Turtle()
+turtle.speed(100)
+def randomColor():
+    r=random.randint(0,255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    turtle.colormode(255)
+    t.color(r,g,b)
+t.pensize(3)
+turtle.bgcolor("black")
+for i in range(180):
+    randomColor()
+    t.forward(100)
+    t.right(30)
+    randomColor()
+    t.forward(20)
+    t.left(60)
+    randomColor()
+    t.forward(50)
+    t.right(30)
+    t.penup()
+    t.goto(0,0)
+    t.pendown()
+    t.left(2)
+turtle.done()
