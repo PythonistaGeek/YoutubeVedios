@@ -1,0 +1,24 @@
+class myrange:
+    def __init__(self,start,end, step):
+        self.start=start
+        self.end=end
+        self.step=step
+    def __iter__(self):
+        return self
+    def __next__(self):
+        if self.start<self.end:
+            current=self.start
+            self.start+=self.step
+            return current
+        else:
+            raise StopIteration
+s=int(input("Enter the starting number: "))
+e=int(input("Enter the ending number: "))
+Step=int(input("How many numbers should I skip? "))
+x=myrange(s,e, Step)
+#print(next(x))
+#print(next(x))
+#print(next(x))
+#print(next(x))
+for i in x:
+    print(i)
