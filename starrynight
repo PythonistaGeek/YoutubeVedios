@@ -1,0 +1,19 @@
+#starry night
+import turtle
+import random
+turtle.bgcolor("black")
+turtle.color("white")
+turtle.pensize(3)
+turtle.speed(10)
+def randomlocation():
+ x=random.randint(-500,500)
+ y=random.randint(0,400)
+ turtle.penup()
+ turtle.goto(x,y)
+ turtle.pendown()
+for i in range(300):
+ randomlocation()
+ for j in range(5):
+  turtle.forward(10)
+  turtle.left(180-180/5)
+turtle.done()
