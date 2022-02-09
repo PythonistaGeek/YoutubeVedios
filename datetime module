@@ -1,0 +1,29 @@
+
+from datetime import datetime,timedelta
+today=datetime.now()
+print(today)
+td=timedelta(days=5)
+prevday=today-td
+print(prevday-today)
+print(type(today))
+
+today=datetime.now()
+print(today)#2022-02-01 20:26:30.013624
+print(today.strftime("%A"))#Tuesday- Weekday full version
+print(today.strftime("%a"))#Tue - Weekday short version
+print(today.strftime("%B"))#February - month full version
+print(today.strftime("%b"))#Feb - month short version
+print(today.strftime("%C"))#20 - Century
+print(today.strftime("%c"))#Tue Feb  1 20:26:30 2022 - Local version of date time
+print(today.strftime("%d"))#01 - date
+print(today.strftime("%m"))#02 - month
+print(today.strftime("%Y"))#2022 - full version year
+print(today.strftime("%y"))#22 - short version
+print(today.strftime("%H"))#20- 24 hr formate of hours
+print(today.strftime("%I"))#08- 12 hr format of hours
+print(today.strftime("%p"))#PM -AM/PM
+print(today.strftime("%M"))#26 - Minutes
+print(today.strftime("%S"))#30 - seconds
+
+
+
