@@ -1,0 +1,22 @@
+#finonacci series
+def fibnormal(x):
+  first=0
+  second=1
+  ans=0
+  if x<=1:
+    return x
+  else:
+    for i in range(x-1):
+      ans=first+second
+      first=second
+      second= ans
+    return ans
+def fibrec(x):
+  if x<=1:
+    return x
+  else:
+    return fibrec(x-1)+fibrec(x-2)
+num=int(input("Enter how many fibonacci numbers do you need?"))
+for i in range(num):
+  # print(fibnormal(i))
+  print(fibrec(i))
